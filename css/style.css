@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Khula:800');
+body {
+    background-color: #FCFAFA;
+    color: #293133;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 800px;
+    margin:  5% auto 0 auto;
+}
+
+h1 {
+    font-size: 25px;
+    color: #A4B8C4;
+    margin-bottom: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+header div img, header div svg {
+    width: 50px;
+}
+
+.header-logo-title {
+    display: none;
+}
+
+.header-logo {
+    max-width: 50px;
+    height: auto;
+    opacity: .7;
+    transition: opacity .3s cubic-bezier(0, -0.01, 0.74, 0.01);
+}
+
+.header-logo:hover {
+    opacity: 1;
+}
+
+.header-phone {
+    max-width: 38px;
+    opacity: .6;
+}
+
+.header-phone:hover {
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(0, -0.01, 0.74, 0.01);
+}
+
+
+/* stili per dispositivi deskto */
+@media screen and (min-width: 240px) {
+    .header-logo-title {
+        display: block;
+        color: #0CCA4A;
+        font-size: 14px;
+        font-family: 'Khula', sans serif;
+        text-transform: uppercase;
+        opacity: .7;
+    }
+}
+
+@media screen and (min-width: 310px) {
+    .header-logo-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .header-logo-title {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    body {
+        background-color: #0CCA4A;
+    }
+
+    main {
+        margin-top: 5%;
+        padding: 5%;
+        min-height: 100vh;
+        background: #FCFAFA;
+    }
+}
